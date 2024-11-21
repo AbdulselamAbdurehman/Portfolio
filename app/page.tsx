@@ -1,20 +1,23 @@
 import Header from "./components/Header";
 import SkillItem from "./components/SkillItem";
 import ProjectCard from "./components/ProjectCard";
+import Footer from "./components/Footer";
+import About from "./components/About";
+
 const Home = () => {
   return (
     <div className="min-h-screen bg-gray-100 dark:bg-gray-900">
       <Header />
       <section
         id="hero"
-        className="h-screen flex flex-col justify-center items-center bg-gray-50 dark:bg-gray-800"
+        className="h-screen flex flex-col justify-center items-center bg-gradient-to-r from-slate-100 to-blue-500"
       >
-        <h1 className="text-4xl md:text-5xl font-bold text-gray-800 dark:text-white">
-          Hi, I'm [Your Name]
+        <h1 className="text-4xl md:text-5xl text-center font-bold text-gray-800 dark:text-white">
+          Hi, I'm Abdulselam
         </h1>
-        <p className="mt-4 text-lg md:text-xl text-gray-600 dark:text-gray-300 text-center max-w-xl">
+        <p className="mt-4 text-lg md:text-xl text-gray-600 dark:text-gray-300 text-center max-w-xl px-8">
           Building scalable and efficient backend solutions. Passionate about
-          solving complex problems with clean code.
+          solving complex problems with <strong>CLEAN</strong> code.
         </p>
         <div className="mt-6 flex gap-4">
           <a
@@ -31,41 +34,11 @@ const Home = () => {
           </a>
         </div>
       </section>
-
-      <section id="about" className="p-8">
-        <h2 className="text-2xl font-bold text-center text-gray-800 dark:text-white">
-          About Me
-        </h2>
-        <div className="mt-6 flex flex-col md:flex-row items-center justify-center gap-8 max-w-4xl mx-auto">
-          <img
-            src="/images/profile.jpg"
-            alt="Profile"
-            className="w-60 h-60 rounded-full border-2 border-gray-300 dark:border-gray-700"
-          />
-          <div className="text-center md:text-left">
-            <p className="text-gray-600 dark:text-gray-400">
-              I am a Full-Stack software developer with a strong foundation in
-              creating scalable, efficient systems. My expertise spans
-              technologies like <strong>Python (Flask, Django)</strong>,{" "}
-              <strong>MERN stack</strong>, <strong>Flutter</strong>, and{" "}
-              <strong>SQL</strong>, enabling me to deliver robust, user-friendly
-              solutions.
-            </p>
-            <p className="text-gray-600 dark:text-gray-400 mt-4">
-              With experience in building interactive applications and designing
-              efficient APIs, I thrive on solving complex challenges and
-              delivering high-quality software. I am passionate about crafting
-              solutions that make a tangible impact.
-            </p>
-            <p className="text-gray-600 dark:text-gray-400 mt-4">
-              Currently, I am seeking opportunities to collaborate on meaningful
-              projects—be it full-time roles or freelance work.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section id="skills" className="p-8">
+      <About />
+      <div className="flex justify-center">
+        <div className="h-0.5 w-2/5 bg-slate-300 text-center rounded"></div>
+      </div>
+      <section id="skills" className="p-8 md:px-16">
         <h2 className="text-2xl font-bold text-center text-gray-800 dark:text-white">
           Skills
         </h2>
@@ -94,6 +67,10 @@ const Home = () => {
           <SkillItem src="github.png" alt="github.js" title="GitHub" />
         </div>
       </section>
+
+      <div className="flex justify-center">
+        <div className="h-0.5 w-2/5 bg-slate-300 text-center rounded"></div>
+      </div>
       <section id="projects" className="p-8">
         <h2 className="text-2xl font-bold text-center text-gray-800 dark:text-white">
           Projects
@@ -126,7 +103,11 @@ const Home = () => {
           />
         </div>
       </section>
-      <section id="experience" className="p-8">
+
+      <div className="flex justify-center">
+        <div className="h-0.5 w-2/5 bg-slate-300 text-center rounded"></div>
+      </div>
+      <section id="experience" className="p-8 md:px-16">
         <h2 className="text-2xl font-bold text-center text-gray-800 dark:text-white">
           Experience
         </h2>
@@ -159,11 +140,12 @@ const Home = () => {
               </li>
             </ul>
           </div>
-
-          {/* Additional Experience Items can be added here */}
         </div>
       </section>
 
+      <div className="flex justify-center">
+        <div className="h-0.5 w-2/5 bg-slate-300 text-center rounded"></div>
+      </div>
       <section id="contact" className="p-8 bg-gray-100 dark:bg-gray-800">
         <h2 className="text-2xl font-bold text-center text-gray-800 dark:text-white">
           Contact Me
@@ -208,49 +190,7 @@ const Home = () => {
           </form>
         </div>
       </section>
-
-      <footer className="bg-gray-900 text-gray-400 p-6">
-        <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center">
-          {/* Branding */}
-          <p className="text-sm text-center md:text-left">
-            © {new Date().getFullYear()} Your Name. All rights reserved.
-          </p>
-          {/* Social Links */}
-          <div className="mt-4 md:mt-0 flex gap-4">
-            <a
-              href="https://github.com/yourusername"
-              target="_blank"
-              aria-label="GitHub"
-            >
-              <img
-                src="/icons/github.png"
-                alt="GitHub"
-                className="w-6 h-6 hover:opacity-80"
-              />
-            </a>
-            <a
-              href="https://linkedin.com/in/yourusername"
-              target="_blank"
-              aria-label="LinkedIn"
-            >
-              <img
-                src="/icons/linkedin.png"
-                alt="LinkedIn"
-                className="w-6 h-6 hover:opacity-80"
-              />
-            </a>
-            <a href="mailto:your-email@example.com" aria-label="Email">
-              <img
-                src="/icons/email.png"
-                alt="Email"
-                className="w-6 h-6 hover:opacity-80"
-              />
-            </a>
-          </div>
-        </div>
-      </footer>
-
-      {/* Other sections */}
+      <Footer />
     </div>
   );
 };
