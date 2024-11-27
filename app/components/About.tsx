@@ -1,14 +1,14 @@
 export default function About() {
   return (
-    <section id="about" className="p-8">
-      <div className="mt-6 flex flex-col md:flex-row items-center justify-center gap-8 max-w-4xl mx-auto">
+    <section id="about" className="px-8 my-16">
+      <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-16 max-w-4xl mx-auto">
         <img
           src="/images/profile.png"
           alt="Profile"
           className="w-60 h-60 rounded-full border-2 border-gray-300 dark:border-gray-700"
         />
-        <div className="text-left">
-          <h2 className="text-2xl font-bold text-gray-800 dark:text-white">
+        <div className="text-left flex flex-col justify-between gap-4">
+          <h2 className="text-2xl font-bold text-gray-800 dark:text-white ">
             About Me
           </h2>
           <p className="text-gray-600 dark:text-gray-400">
