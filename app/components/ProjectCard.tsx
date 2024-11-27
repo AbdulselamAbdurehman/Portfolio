@@ -1,3 +1,4 @@
+import Image from "next/image";
 const ProjectCard = ({
   title,
   description,
@@ -16,7 +17,7 @@ const ProjectCard = ({
       <img
         src={imageSrc}
         alt={`${title} preview`}
-        className="w-full h-32 object-cover rounded-md"
+        className=" hobject-cover rounded-md"
       />
       <h3 className="text-lg font-semibold text-gray-800 dark:text-white mt-4">
         {title}
