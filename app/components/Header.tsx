@@ -56,7 +56,7 @@ const Header = () => {
         </button>
 
         <nav
-          className={`flex-col sm:flex-row flex sm:opacity-100 sm:max-h-[500px] sm:pl-6  sm:gap-4 absolute sm:static top-14 left-0 w-full sm:w-auto bg-gray-900 sm:bg-transparent text-white overflow-hidden transition-all duration-1000 ease-in-out
+          className={`flex-col sm:flex-row flex sm:opacity-100 sm:max-h-[500px] sm:pl-6  sm:gap-4 absolute sm:static top-14 left-0 w-full sm:w-auto bg-gray-900 sm:bg-transparent text-white overflow-hidden transition-all duration-500 ease-in-out
             ${
               isMenuOpen
                 ? "opacity-100 max-h-[500px] pl-6"
