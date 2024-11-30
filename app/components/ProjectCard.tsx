@@ -1,4 +1,3 @@
-import Image from "next/image";
 const ProjectCard = ({
   title,
   description,
@@ -13,7 +12,7 @@ const ProjectCard = ({
   imageSrc: string;
 }) => {
   return (
-    <div className="project-card p-4 border rounded-lg hover:shadow-lg dark:bg-gray-700 dark:border-gray-600">
+    <div className="project-card p-4 border-4 rounded-lg hover:shadow-lg dark:bg-gray-700 dark:border-gray-600">
       <img
         src={imageSrc}
         alt={`${title} preview`}
