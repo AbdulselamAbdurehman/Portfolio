@@ -5,7 +5,7 @@ export default function Hero() {
       className="h-screen flex flex-col justify-center items-center bg-gradient-to-r from-slate-100 to-blue-500"
     >
       <h1 className="text-3xl md:text-5xl text-center font-bold text-gray-800 dark:text-white">
-        Hi, I'm Abdulselam
+        Hi, I&apos;m Abdulselam
       </h1>
       <p className="mt-4 text-lg md:text-xl text-gray-600 dark:text-gray-300 text-center max-w-xl px-8">
         Building scalable and efficient backend solutions. Passionate about
