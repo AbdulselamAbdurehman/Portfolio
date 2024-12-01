@@ -7,7 +7,8 @@ export default function Contact() {
       <div className="max-w-3xl mx-auto mt-6 text-center">
         <p className="text-gray-600 dark:text-gray-400">
           Interested in working together? Feel free to reach out via the form
-          below or connect with me on my social platforms.
+          below or connect with me on my social platforms. For security reasons,
+          I prefer Linkedin.
         </p>
         <form
           action="https://formspree.io/f/yourformid" // Replace with actual Formspree or backend handler
