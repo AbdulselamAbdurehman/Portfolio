@@ -14,22 +14,31 @@ export default function Projects() {
         <ProjectCard
           title="QuizApp"
           description="Interactive quizzes for learning."
-          technologies={["Flutter", "Firebase", "TypeScript"]}
-          links={{ github: "https://github.com/yourrepo/quizapp", demo: "" }}
+          technologies={["Flutter", "NestJs", "TypeScript"]}
+          links={{
+            github: "https://github.com/AbdulselamAbdurehman/QuizApp.git",
+            demo: "",
+          }}
           imageSrc="/images/quizapp.png"
         />
         <ProjectCard
           title="Memariya.com"
           description="Personalized learning platform."
           technologies={["React", "Node.js", "PostgreSQL"]}
-          links={{ github: "https://github.com/yourrepo/memariya", demo: "" }}
+          links={{
+            github: "https://github.com/Bemnet-13/Memariya.com.git",
+            demo: "",
+          }}
           imageSrc="/images/memariya.png"
         />
         <ProjectCard
-          title="Petition Platform"
-          description="Web app for creating and managing petitions."
-          technologies={["Flask", "DynamoDB", "HTML"]}
-          links={{ github: "https://github.com/yourrepo/petition", demo: "" }}
+          title="Blog Platform"
+          description="Web app for creating and managing blogs."
+          technologies={["Flask", "DynamoDB", "REST API"]}
+          links={{
+            github: "https://github.com/AbdulselamAbdurehman/flask-blog.git",
+            demo: "",
+          }}
           imageSrc="/images/petition.png"
         />
       </div>
